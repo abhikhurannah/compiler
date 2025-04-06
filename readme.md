@@ -27,14 +27,56 @@ Depending on the choice:
 - **Arithmetic expressions** are parsed and instructions are printed.
 - **Polynomials** are evaluated numerically, with detailed steps printed.
 
-## ✅ Example Usage
+## SCREENSHOTS:
+- Polynomial Output:
+
+![Polynomial Output](poly1.png)
+
+- Arithmetic Expression Output:
+
+![Arithmetic Output](arith1.png)
+
+
+## ✅ Example Usage:
+
+```bash
+### Polynomial Mode (`1`) 
+
+    Enter '1' for polynomial evaluation or '2' for arithmetic expressions: 1
+    Enter a polynomial expression: 3x^2 + 2x + 1
+    Enter the value of x: 2
+
+    Computation Steps:
+    -----------------
+    [POW] x^2 = 4 -> temp0
+    [MUL] 2 * temp0 = 8 -> temp1
+    [POW] x^1 = 2 -> temp2
+    [MUL] 3 * temp2 = 6 -> temp3
+    [LOAD] -5 -> temp4
+    [ADD] temp1 + temp3 = 14 -> temp5
+    [ADD] temp5 + temp4 = 9 -> temp6
+    -----------------
+    Final result: 9
+
+
 
 ### Arithmetic Mode (`2`)
-```bash
+
 Enter '1' for polynomial evaluation or '2' for arithmetic expressions: 2
 Enter an arithmetic expression: 2 + 3 * (4 - 1)
+
 Generated Instructions:
-SUB 4 1 -> temp0
-MUL 3 temp0 -> temp1
-ADD 2 temp1 -> temp2
-# compiler
+-----------------
+[SUB] 4 - 1 = 3 -> temp0
+[MUL] 3 * temp0 = 9 -> temp1
+[ADD] 2 + temp1 = 11 -> temp2
+-----------------
+Final result: 11
+```
+
+
+
+
+
+
+
