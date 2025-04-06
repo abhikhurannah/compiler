@@ -30,11 +30,11 @@ Depending on the choice:
 ## SCREENSHOTS:
 - Polynomial Output:
 
-![Polynomial Output](poly1.png)
+![Polynomial Output](poly.png)
 
 - Arithmetic Expression Output:
 
-![Arithmetic Output](arith1.png)
+![Arithmetic Output](arith.png)
 
 
 ## ✅ Example Usage:
