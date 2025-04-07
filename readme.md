@@ -49,14 +49,14 @@ Depending on the choice:
     Computation Steps:
     -----------------
     [POW] x^2 = 4 -> temp0
-    [MUL] 2 * temp0 = 8 -> temp1
+    [MUL] 3 * temp0 = 12 -> temp1
     [POW] x^1 = 2 -> temp2
-    [MUL] 3 * temp2 = 6 -> temp3
-    [LOAD] -5 -> temp4
-    [ADD] temp1 + temp3 = 14 -> temp5
-    [ADD] temp5 + temp4 = 9 -> temp6
+    [MUL] 2 * temp2 = 4 -> temp3
+    [LOAD] 1 -> temp4
+    [ADD] temp1 + temp3 = 16 -> temp5
+    [ADD] temp5 + temp4 = 17 -> temp6
     -----------------
-    Final result: 9
+    Final result: 17
 
 
 
